@@ -1,0 +1,34 @@
+GLOBAL VARIABELS:
+--border-style
+--border-width
+--border-color
+--padding
+--font-family
+
+BOX VARIABELS:
+--box-height
+
+HEADER VARIABELS:
+--header-background-color
+--header-font-style
+--header-font-size
+--header-font-weight
+--header-color
+--header-display
+
+CONTENT VARIABELS:
+--content-background-color
+--content-font-style
+--content-font-size
+--content-font-weight
+--content-color
+--content-display
+
+FOOTER VARIABELS:
+--footer-background-color
+--footer-font-style
+--footer-font-size
+--footer-font-weight
+--footer-color
+--footer-display
+

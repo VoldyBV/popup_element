@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Pop Up </title>
+	<script type="text/javascript" src="bv-popup.js"></script>
+	<style type="text/css">
+		.class bv-popup{
+			--border-style: dashed;
+			--border-color: red;
+			--header-background-color: darkgrey;
+			--footer-background-color: darkgrey;
+		}
+		.pop-up1 bv-popup{
+			--footer-display: none;
+		}
+		.pop-up2 bv-popup{
+			--header-display: none;
+		}
+		.pop-up3 bv-popup{
+			--header-display: none;
+			--footer-display: none;
+		}
+	</style>
+	<script>
+		function ChangePopUp(){
+			document.querySelector("bv-popup-temp").applyTo = ".div";
+		}
+	</script>
+</head>
+<body>
+	<div id="div"> This one has popup </div>
+	<br>
+	<br>
+	<div class="class"> This one has styled popup </div>
+	<br>
+	<br>
+	<div class="pop-up1"> This one has popup without footer </div>
+	<br>
+	<br>
+	<div class="pop-up2"> This one has popup without header </div>
+	<br>
+	<br>
+	<div class="pop-up3"> This one has popup without header and footer </div>
+	<br>
+	<br>
+	<div class="pop-up3"> This one has popup without header and footer </div>
+	<br>
+	<br>
+	<div class="pop-up3"> This one has popup without header and footer </div>
+	<bv-popup-temp apply-to="#div">
+		<div header>
+			PopUp
+		</div>
+		<div content>
+			I am a small popup
+		</div>
+		<div footer>
+			Made by: PopUp
+		</div>
+	</bv-popup-temp>
+	<bv-popup-temp apply-to=".class">
+		<div header>
+			Styled PopUp
+		</div>
+		<div content>
+			I am a small styled popup
+		</div>
+		<div footer>
+			Made by: PopUp
+		</div>
+	</bv-popup-temp>
+	<bv-popup-temp apply-to=".pop-up1">
+		<div header>
+			PopUp without footer
+		</div>
+		<div content>
+			I am a small popup, but without footer
+		</div>
+	</bv-popup-temp>
+	<bv-popup-temp apply-to=".pop-up2">
+		<div content>
+			I am a small popup, but without header
+		</div>
+		<div footer>
+			Made by: PopUp
+		</div>
+	</bv-popup-temp>
+	<bv-popup-temp apply-to=".pop-up3">
+		<div content>
+			I am a small popup, but without header and footer
+		</div>
+	</bv-popup-temp>
+</body>
+</html>
